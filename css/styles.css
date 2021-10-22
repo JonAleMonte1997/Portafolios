@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gemunu Libre", sans-serif;
+}
+
+body {
+  background-color: #dfdfff;
+}
+
+section {
+  background-color: #9393ff;
+}
+section h2 {
+  color: #004781;
+}
+
+#proyectos, #sobre-mi {
+  color: #dfdfff;
+}
+
+@keyframes appearLetters {
+  0% {
+    background-color: rgba(0, 0, 54, 0);
+    color: rgba(214, 237, 255, 0);
+    margin-left: 50px;
+  }
+  100% {
+    background-color: #000036;
+    color: #d6edff;
+    margin-left: 0px;
+  }
+}
+header .header-bg-img {
+  background-image: url("../img/banner-encabezado.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  padding: 100px;
+}
+header .header-bg-img div {
+  animation: appearLetters 4s;
+  background-color: #000036;
+  padding: 40px;
+  color: #d6edff;
+}
+@media screen and (max-width: 992px) {
+  header .header-bg-img {
+    grid-template: 1fr/1fr;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header .header-bg-img {
+    padding: 50px;
+  }
+  header .header-bg-img div {
+    padding: 20px;
+  }
+}
+
+nav {
+  background-color: #acacff;
+}
+@media only screen and (min-width: 992px) {
+  nav .nav-links {
+    transition: all 1s;
+  }
+  nav .nav-links:hover {
+    transform: scale(1.25);
+  }
+}
+nav .nav-links a {
+  color: #004781;
+  text-decoration: none;
+}
+nav .nav-links a:hover {
+  color: #007fe7;
+}
+
+.sobre-mi-section .img-container {
+  background-color: #000036;
+}
+.sobre-mi-section .img-container img {
+  transition: all 0.5s;
+}
+.sobre-mi-section:hover .img-container img {
+  transform: translate(10px, -10px);
+}
+
+footer {
+  background-color: #838383;
+}
+footer a {
+  text-decoration: none;
+}
+footer img {
+  width: 50px;
+  transition: all 1s;
+}
+footer img:hover {
+  transform: scale(1.25);
+}
+
+/*# sourceMappingURL=styles.css.map */

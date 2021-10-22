@@ -1,0 +1,27 @@
+@import '../base/variables.scss';
+
+nav {
+    background-color: map-get($principal-theme , nav-bg-color);
+
+    .nav-links {
+        
+        @media only screen and (min-width: 992px){
+
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.25);
+            }
+        }
+
+        a {
+            color: map-get($principal-theme, nav-item-color);
+            text-decoration: none;
+
+            &:hover {
+
+                color: map-get($principal-theme, nav-item-color-hover);
+            }
+        }
+    }
+}

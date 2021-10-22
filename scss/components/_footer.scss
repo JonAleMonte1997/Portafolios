@@ -1,0 +1,19 @@
+@import '../base/variables.scss';
+
+footer{
+
+    background-color: map-get($principal-theme, footer-bg-color);
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        width: 50px;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+}

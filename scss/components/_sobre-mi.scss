@@ -1,0 +1,16 @@
+@import '../base/variables.scss';
+
+.sobre-mi-section {
+
+    .img-container {
+        background-color: map-get($principal-theme, sobre-mi-img-bg-color);
+
+        img {
+            transition: all 0.5s;
+        }
+    }
+
+    &:hover .img-container img {
+        transform: translate(10px, -10px);
+    }
+}

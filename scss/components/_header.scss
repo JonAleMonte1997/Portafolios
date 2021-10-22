@@ -1,0 +1,46 @@
+@import '../base/variables.scss';
+@import '../base/mixings';
+
+@keyframes appearLetters {
+
+    0% {
+        background-color: rgba(map-get($principal-theme, header-div-bg-color), 0);
+        color: rgba(map-get($principal-theme, header-text-color), 0);
+        margin-left: 50px;
+    }
+    100% {
+        background-color: map-get($principal-theme, header-div-bg-color);
+        color: map-get($principal-theme, header-text-color);
+        margin-left: 0px;
+    }
+}
+
+header {
+
+    $header-padding: 100px;
+    $div-padding: 40px;
+
+    .header-bg-img {
+        background-image: url("../img/banner-encabezado.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        
+        padding: $header-padding;
+
+        div {
+            animation: appearLetters 4s;
+            background-color: map-get($principal-theme, header-div-bg-color);
+            padding: $div-padding;
+            color: map-get($principal-theme, header-text-color);
+        }
+
+
+        @include media-header($header-padding, $div-padding, sm);
+
+        @include media-header($header-padding, $div-padding, xs);
+
+    }
+}

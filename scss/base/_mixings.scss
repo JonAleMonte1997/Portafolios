@@ -1,0 +1,23 @@
+$sm-size: 992px;
+$xs-size: 480px;
+
+@mixin media-header ($header-padding, $div-padding, $media) {
+    
+    @if $media == sm {
+
+        @media screen and (max-width: $sm-size) {
+            grid-template: 1fr / 1fr;
+        }
+
+    } @else if $media == xs {
+
+        @media only screen and (max-width: $xs-size) {
+            
+            padding: $header-padding / 2;
+
+            div {
+                padding: $div-padding / 2;
+            }
+        }
+    }
+}
