@@ -16,10 +16,6 @@ section h2 {
   color: #004781;
 }
 
-#proyectos, #sobre-mi {
-  color: #dfdfff;
-}
-
 @keyframes appearLetters {
   0% {
     background-color: rgba(0, 0, 54, 0);
@@ -33,7 +29,7 @@ section h2 {
   }
 }
 header .header-bg-img {
-  background-image: url("../img/banner-encabezado.jpg");
+  background-image: url("../img/banner-encabezado.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
